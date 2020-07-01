@@ -1,0 +1,87 @@
+// Colors
+$white: #ffffff;
+$red: #F1352B;
+
+$black: #000000;
+$lighten-black:    lighten( $black, 30% );
+
+$blue: #150f96;
+$darken-blue:     darken( $blue, 5% );
+$lighten-blue:    lighten( $blue, 20% );
+
+$gray: #f6f5f6;
+$darken-gray:     darken( $gray, 20% );
+
+
+
+//font sizes
+
+$xsmal: .5rem;
+$small: .75rem;
+$medium: 1rem;
+$large: 1.5rem;
+$xlarge: 2rem;
+$xxlarge: 2.5rem;
+
+$bgi-modal: linear-gradient(to bottom right, $white ,$black);
+$bgi: linear-gradient(to bottom right, #fdfcfb ,#e2d1c3);
+
+
+$a-stars: 800s stars infinite linear;
+
+ @keyframes stars {
+   0%{
+    background-position:0 -9199px;}
+   100% {
+    background-position:0 0;}
+ }
+
+$a-float: float 10s infinite;
+
+ @keyframes float {
+   0%, 100% {
+     transform:translate(20px,20px);}
+   50% {
+     transform:translate(20px,50px);}
+   }
+
+$a-sigit-float-behind:  sigit-float-behind 3s infinite;
+
+ @keyframes sigit-float-behind {
+    0%, 100% {
+      transform:translate(20px,0px);}
+   50% {
+     transform:translate(20px,20px);}
+ }
+
+$a-sigit-float-bg: sigit-float-bg 10s infinite;
+
+ @keyframes sigit-float-bg {
+    0%, 100% {
+      transform:translate(20px,0px);}
+   50% {
+     transform:translate(20px,50px);}
+   }
+
+// @keyframes sigit-float-bg {
+//    0%, 100% {
+//      transform:translate(20px,0px);}
+//   50% {
+//     transform:translate(20px,50px);}
+//   }
+
+$a-astronaut: astronaut 50s infinite;
+
+ @keyframes astronaut {
+    0%, 100% {
+      transform:scale(1,1);}
+   50% {
+    transform:scale(2,2);}
+  }
+
+ //@keyframes space {
+//    0%, 100% {
+//      background-size:50% 50%;}
+//   50% {
+//    background-size:100% 100%;}
+//  }
