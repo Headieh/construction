@@ -50,7 +50,7 @@ function watch() {
     browserSync.init({
         // You can tell browserSync to use this directory and serve it as a mini-server
         server: {
-            baseDir: "./src"
+            baseDir: "./"
         }
         // If you are already serving your website locally using something like apache
         // You can use the proxy setting to proxy that instead
@@ -61,7 +61,7 @@ function watch() {
     // This can be html or whatever you're using to develop your website
     // Note -- you can obviously add the path to the Paths object
     //gulp.watch("src/*.html", reload);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("*.html").on('change', browserSync.reload);
 }
 
 // We don't have to expose the reload function
