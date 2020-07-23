@@ -4,6 +4,7 @@ var gulp = require("gulp"),
     autoprefixer = require("autoprefixer"),
     cssnano = require("cssnano"),
     sourcemaps = require("gulp-sourcemaps"),
+    eslint = require("gulp-eslint"),
     browserSync = require("browser-sync").create();
 
 var paths = {
@@ -62,6 +63,7 @@ function watch() {
     // Note -- you can obviously add the path to the Paths object
     //gulp.watch("src/*.html", reload);
     gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch('scripts/*.js', browserSync.reload);
 }
 
 // We don't have to expose the reload function
