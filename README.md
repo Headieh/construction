@@ -10,7 +10,7 @@ This project shows use of transitions and was made just for fun
 -   Run `gulp`
 -   If you have permissions issues, checkout this [link](https://stackoverflow.com/questions/50258901/cannot-find-module-gulp-sass)
 
-### To View:
+### View:
 - Visit [site](https://headieh.github.io/construction/)
 
 ### Helpful Code:
