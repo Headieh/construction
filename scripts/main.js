@@ -4,7 +4,7 @@ let title = document.createElement('p');
 
 function getLocation() {
   if (navigator.geolocation) {
-    x.appendChild(navigator.geolocation.getCurrentPosition(showPosition));
+    navigator.geolocation.getCurrentPosition(showPosition);
   } else {
     title.textContent = 'Geolocation is not supported by this browser.';
     x.appendChild(title);
@@ -17,6 +17,7 @@ function showPosition(position) {
   console.log('lat:',position.coords.latitude, 'long',position.coords.longitude);
 }
 
+console.log(showPosition(getLocation()));
 
 
     //var position.latitude = 51.5;
