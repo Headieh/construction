@@ -1,23 +1,24 @@
 var x = document.getElementById("notes");
-let title = document.createElement('p');
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
 
+function success(pos) {
+  var crd = pos.coords;
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    title.textContent = 'Geolocation is not supported by this browser.';
-    x.appendChild(title);
-  }
+  console.log('Your current position is:');
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude: ${crd.longitude}`);
+  console.log(`More or less ${crd.accuracy} meters.`);
 }
 
-function showPosition(position) {
-  x.appendChild("Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude);
-  console.log('lat:',position.coords.latitude, 'long',position.coords.longitude);
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
-console.log(showPosition(getLocation()));
+navigator.geolocation.getCurrentPosition(success, error, options);
 
 
     //var position.latitude = 51.5;
