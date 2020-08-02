@@ -3,13 +3,14 @@
   height: auto;
   overflow: hidden;
   min-width: 100%;
+  padding: 0;
 }
 
 .star {
   color: white;
-  background-image: url("../img/space.jpg");
-  background-size: cover;
-  height: 1333.333px;
+  background-image: url("../img/star.png");
+  background-size: contain;
+  height: 100vh;
   width: auto;
   background-color: black;
   background-repeat: repeat;
@@ -17,34 +18,16 @@
   animation: $a-stars;
 }
 
-.box {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.astronaut {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  animation: $a-astronaut;
+  color: #fff;
 
-  .item2 {
-    animation: $a-astronaut;
-    align-self: flex-start;
-  }
-
-  .item2 {
-    animation: $a-astronaut;
-    align-self: flex-end;
-
-    .astronaut {
-      animation: $a-float;
-      background: transparent;
-      height: auto;
-      margin: auto;
-      width: 100%;
-      color: #fff;
-
-      img {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 50%;
-      }
-    }
+  img {
+    animation: $a-float;
+    max-width: 30%;
   }
 }
 
@@ -52,9 +35,7 @@ h1 {
   padding: 1em;
   font-family: "Electrolize", Times, serif;
   text-transform: uppercase;
-  display: block;
   text-shadow: 0 0 80px white,0 0 40px white,0 0 5px white;
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
   text-align: center;
 
   span:nth-of-type(3) {
@@ -66,6 +47,23 @@ h1 {
   }
 
   span:nth-of-type(1) {
-    animation: bulb2 20s linear infinite;
+    animation: bulb2 15s linear infinite;
   }
+}
+
+.modal-content{
+	color:black;
+}
+
+.modal-header, .modal-footer{
+	width:100%;
+	padding:1em;
+	text-align: left;
+	margin:auto;
+}
+
+.modal-footer>button{
+	width: 100%;
+	padding:.5em;
+	margin:.5em;
 }

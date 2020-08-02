@@ -1,85 +1,35 @@
-// Colors
-$white: #ffffff;
-$red: #F1352B;
-
-$black: #000000;
-$lighten-black:    lighten( $black, 30% );
-
-$blue: #150f96;
-$darken-blue:     darken( $blue, 5% );
-$lighten-blue:    lighten( $blue, 20% );
-
-$gray: #f6f5f6;
-$darken-gray:     darken( $gray, 20% );
-
-//font sizes
-
-$min_width: 320px;
-$max_width: 1300px;
-$min_font: .75rem;
-$max_font: 2rem;
-
-$bgi-modal: linear-gradient(to bottom right, $white ,$black);
-$bgi: linear-gradient(to bottom right, #fdfcfb ,#e2d1c3);
-
 @keyframes star {
 	    from { background-position: left 0; }
-		to { background-position: left -4000px; }
+		to { background-position: left -100vh; }
 	}
+$a-stars: star 30s linear infinite;
 
-$a-stars: star 120s linear infinite;
-
- @keyframes stars {
-   0%{background-position:0 0;}
-   100% {background-position:0 -1333px;}
- }
-
+@keyframes float {
+   0%, 100% {transform:translate(0%,0%);}
+   50% {transform:translate(0%,40%);}
+}
 $a-float: float 10s infinite;
 
- @keyframes float {
-   0%, 100% {transform:translate(0px,0px);}
-   50% {transform:translate(0px,30px);}
-   }
-
-$a-sigit-float-behind:  sigit-float-behind 3s infinite;
-
- @keyframes sigit-float-behind {
-    0%, 100% {transform:translate(20px,0px);}
-   50% {transform:translate(20px,20px);}
- }
-
-$a-sigit-float-bg: sigit-float-bg 10s infinite;
-
- @keyframes sigit-float-bg {
-    0%, 100% {transform:translate(10px,-10px);}
-   50% {transform:translate(10px,40px);}
-   }
-
+@keyframes astronaut {
+	0%, 100% {transform: scale(.5,.5);}
+	50% {transform: scale(1,1);}
+}
 $a-astronaut: astronaut 50s infinite;
 
- @keyframes astronaut {
-    0%, 100% {
-      transform:scale(1,1);}
-   50% {
-    transform:scale(2,2);}
+@keyframes bulb1 {
+	0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+  	opacity:.99; text-shadow: 0 0 80px white,0 0 30px white,0 0 6px white;
   }
-
-
-
-  @keyframes bulb1 {
-    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
-      opacity:.99; text-shadow: 0 0 80px white,0 0 40px white,0 0 5px white;
-    }
-    20%,21.999%,63%,63.999%,65%,69.999% {
-      opacity:0.1; text-shadow: none;
-    }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none;
   }
+}
 
-  @keyframes bulb2 {
-    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
-   opacity:0.99; text-shadow: 0 0 80px white,0 0 40px white,0 0 5px white;
- }
- 19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
-   opacity:0.1; text-shadow: none;
- }
-  }
+@keyframes bulb2 {
+	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+		opacity:0.99; text-shadow: 0 0 80px white,0 0 30px white,0 0 6px white;
+	}
+	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+		opacity:0.4; text-shadow: none;
+	}
+}

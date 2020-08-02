@@ -1,4 +1,4 @@
-var suncalc = require('suncalc');
+var SunCalc = require('suncalc');
 suncalc.getTimes(new Date(), 51.5, -0.1);
 
   if( navigator.geolocation )
