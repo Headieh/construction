@@ -1,4 +1,8 @@
 var x = document.getElementById("notes");
+let title = document.createElement('h2');
+title.textContent = 'test';
+x.appendChild(title);
+
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
