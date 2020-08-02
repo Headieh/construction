@@ -1,13 +1,13 @@
 var x = document.getElementById("notes");
-let title = document.createElement('h2');
-title.textContent = 'test';
-x.appendChild(title);
+let title = document.createElement('p');
+
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+    x.appendChild(navigator.geolocation.getCurrentPosition(showPosition));
   } else {
-    x.appendChild("Geolocation is not supported by this browser.");
+    title.textContent = 'Geolocation is not supported by this browser.';
+    x.appendChild(title);
   }
 }
 
