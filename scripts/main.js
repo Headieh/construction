@@ -57,7 +57,7 @@ function success(pos) {
     console.log('sunrise', timeAlter(timeR));
     console.log('actual time', timeA);
     let nothingMakesSense = timeAlter(timeS) < timeAlter(timeR); //because of UTC timezone
-    let isdaytime = true;
+    let isdaytime = false;
     //if ((timeAlter(timeS) < timeA && timeA <= 2400) || (0 <= timeA && timeA < timeAlter(timeR))) {
 
     //312 < 607 & 607 < 1309
