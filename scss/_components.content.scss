@@ -6,10 +6,18 @@
   padding: 0;
 }
 
+#container {
+  background: black;
+  height: auto;
+  overflow: hidden;
+  min-width: 100%;
+  padding: 0;
+}
+
 #backgroundimage {
-  color: white;
+  //color: white;
   //background-image: url("../img/star.png");
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
   width: auto;
   background-color: black;
