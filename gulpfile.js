@@ -68,7 +68,25 @@ function watch() {
 
 // We don't have to expose the reload function
 // It's currently only useful in other functions
+/*
+function lint(){
+  return gulp.src(['scripts/*.js'])
+        .pipe(eslint(
 
+          {
+          	"rules":{
+          		"camelcase": 1,
+          		"comma-dangle": 2,
+          		"quotes": 0
+          	}
+          }
+
+        ))
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
+}
+exports.lint = lint
+*/
 
 // Don't forget to expose the task!
 exports.watch = watch
