@@ -78,15 +78,16 @@ function success(pos) {
     var iImg = document.createElement("img");
     var bgImg = document.getElementById("backgroundimage");
     console.log('bg', bgImg);
+    console.log('not the error');
 
     if (isdaytime) {
       iImg.setAttribute('src', 'img/balloon.png');
       iImg.setAttribute('alt', 'floating red baloon with long red string attached to it');
-      bgImg.style.backgroundImage = "url('../img/clouds.png')";
+      bgImg.style.backgroundImage = "url('https://raw.githubusercontent.com/Headieh/construction/master/img/clouds.png')";
     } else {
       iImg.setAttribute('src', 'img/astronaut.png');
       iImg.setAttribute('alt', 'floating astronaut');
-      bgImg.style.backgroundImage = "url('../img/star.png')";
+      bgImg.style.backgroundImage = "url('https://raw.githubusercontent.com/Headieh/construction/master/img/star.png')";
     }
     item.appendChild(iImg);
 
@@ -159,6 +160,7 @@ function error(err) {
     var iImg = document.createElement("img");
     var bgImg = document.getElementById("backgroundimage");
     console.log('bg', bgImg);
+    console.log('in the error');
 
     if (isdaytime) {
       iImg.setAttribute('src', 'img/balloon.png');
