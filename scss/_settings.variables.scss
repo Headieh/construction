@@ -1,8 +1,8 @@
-@keyframes star {
+@keyframes back {
 	    from { background-position: left 0; }
 		to { background-position: left -100vh; }
 	}
-$a-stars: star 30s linear infinite;
+$a-back: back 30s linear infinite;
 
 @keyframes float {
    0%, 100% {transform:translate(0%,0%);}
@@ -10,11 +10,11 @@ $a-stars: star 30s linear infinite;
 }
 $a-float: float 10s infinite;
 
-@keyframes astronaut {
+@keyframes item {
 	0%, 100% {transform: scale(.5,.5);}
 	50% {transform: scale(1,1);}
 }
-$a-astronaut: astronaut 50s infinite;
+$a-item: item 50s infinite;
 
 @keyframes bulb1 {
 	0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {

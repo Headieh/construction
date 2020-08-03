@@ -1,11 +1,3 @@
-.container {
-  background: black;
-  height: auto;
-  overflow: hidden;
-  min-width: 100%;
-  padding: 0;
-}
-
 #container {
   background: black;
   height: auto;
@@ -15,38 +7,24 @@
 }
 
 #backgroundimage {
-  //color: white;
-  //background-image: url("../img/star.png");
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
   width: auto;
   background-color: black;
   background-repeat: repeat;
   background-position: left bottom;
-  animation: $a-stars;
+  animation: $a-back;
 }
-
-.backgroundimage {
-  color: white;
-  background-image: url("../img/star.png");
-  background-size: contain;
-  height: 100vh;
-  width: auto;
-  background-color: black;
-  background-repeat: repeat;
-  background-position: left bottom;
-  animation: $a-stars;
-}
-
 
 #item {
   width: 100%;
   text-align: center;
   margin: auto;
-  animation: $a-astronaut;
+  animation: $a-item;
   color: #fff;
 
   img {
+		vertical-align: top;
     animation: $a-float;
     max-width: 10rem;
   }
