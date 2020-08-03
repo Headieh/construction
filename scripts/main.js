@@ -144,11 +144,11 @@ function error(err) {
       if(isdaytime){
         iImg.setAttribute('src', 'img/balloon.png');
         iImg.setAttribute('alt', 'floating red baloon with long red string attached to it');
-        bgImg.style.backgroundImage = "url('../img/clouds.png')";      }
+        bgImg.style.backgroundImage = "url('img/clouds.png')";      }//../img/clouds.png
       else{
         iImg.setAttribute('src', 'img/astronaut.png');
         iImg.setAttribute('alt', 'floating astronaut');
-        bgImg.style.backgroundImage = "url('../img/star.png')";
+        bgImg.style.backgroundImage = "url('img/star.png')";//../img/star.png
       }
       item.appendChild(iImg);
   }
