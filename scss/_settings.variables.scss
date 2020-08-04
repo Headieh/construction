@@ -1,8 +1,13 @@
+
+
 @keyframes back {
-	    from { background-position: left 0; }
-		to { background-position: left -100vh; }
+	from { background-position: 0 0; }
+ 	to { background-position: 0 -680px; }
+//-380px clouds
+//-680px stars
 	}
-$a-back: back 30s linear infinite;
+	
+$a-back: back 10s linear infinite;
 
 @keyframes float {
    0%, 100% {transform:translate(0%,0%);}
