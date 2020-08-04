@@ -14,6 +14,6 @@ This project shows use of transitions and was made just for fun
 - Visit [site](https://headieh.github.io/construction/)
 
 ### Helpful Code:
--   [astronaut](https://codepen.io/idur/pen/qEBZPE)
+-   [item](https://codepen.io/idur/pen/qEBZPE)
 -   [bulb](https://css-tricks.com/css-animation-tricks/)
--   [stars](http://jsfiddle.net/UHgF8/5/)
+-   [background](https://codepen.io/subz/pen/GgPrJP)

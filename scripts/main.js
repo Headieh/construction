@@ -132,9 +132,9 @@ function error(err) {
     console.log('actual time', timeA);
 
     let nothingMakesSense = timeAlter(timeS) < timeAlter(timeR); //because of UTC timezone
-    let isdaytime = true;
-    if ((timeAlter(timeS) < timeA && timeA <= 2400) || (0 <= timeA && timeA < timeAlter(timeR))) {
-      isdaytime = false;
+    let isdaytime = false;
+    if ((timeAlter(timeS) < timeA && timeA < timeAlter(timeR))) {
+      isdaytime = true;
     }
     if (nothingMakesSense) {
       isdaytime = !isdaytime;
