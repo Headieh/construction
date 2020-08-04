@@ -6,13 +6,21 @@
   padding: 0;
 }
 
-#backgroundimage {
+#backgroundimage1 {
+  height: 100vh;
+  width: 100%;
+  margin:0;
+  background-color: navy;
+  background-repeat: repeat;
+  animation: $a-back1;
+}
+#backgroundimage2 {
   height: 100vh;
   width: 100%;
   margin:0;
   background-color: black;
   background-repeat: repeat;
-  animation: $a-back;
+  animation: $a-back2;
 }
 
 #item {

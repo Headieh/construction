@@ -1,13 +1,19 @@
+@keyframes back1 {
+	from { background-position: 0 0; }
+ 	to { background-position: 0 -380px; }
+//-380px clouds
+//-680px stars
+	}
 
-
-@keyframes back {
+@keyframes back2 {
 	from { background-position: 0 0; }
  	to { background-position: 0 -680px; }
 //-380px clouds
 //-680px stars
 	}
 
-$a-back: back 10s linear infinite;
+$a-back1: back1 20s linear infinite;
+$a-back2: back2 20s linear infinite;
 
 @keyframes float {
    0%, 100% {transform:translate(0%,0%);}

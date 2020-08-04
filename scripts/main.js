@@ -68,16 +68,21 @@ function success(pos) {
     }
     console.log('daytime:', isdaytime)
 
-    var item = document.getElementById("item");
-    var iImg = document.createElement("img");
-    var bgImg = document.getElementById("backgroundimage");
 
     if (isdaytime) { //../img/clouds.png
+      var bgImg = document.getElementById("backgroundimage1");
+      document.getElementById("backgroundimage2").remove();
+      var item = document.getElementById("item");
+      var iImg = document.createElement("img");
       iImg.setAttribute('src', 'img/balloon.png');
       iImg.setAttribute('alt', 'floating red baloon with long red string attached to it');
       iImg.className = 'img-fluid'
       bgImg.style.backgroundImage = "url('https://raw.githubusercontent.com/Headieh/construction/master/img/clouds.png')";
     } else {
+      var bgImg = document.getElementById("backgroundimage2");
+      document.getElementById("backgroundimage1").remove();
+      var item = document.getElementById("item");
+      var iImg = document.createElement("img");
       iImg.setAttribute('src', 'img/astronaut.png');
       iImg.setAttribute('alt', 'floating astronaut');
       bgImg.style.backgroundImage = "url('https://raw.githubusercontent.com/Headieh/construction/master/img/star.png')";
@@ -141,16 +146,21 @@ function error(err) {
     }
     console.log('daytime:', isdaytime)
 
-    var item = document.getElementById("item");
-    var iImg = document.createElement("img");
-    var bgImg = document.getElementById("backgroundimage");
     if (isdaytime) {
+      var bgImg = document.getElementById("backgroundimage1");
+      document.getElementById("backgroundimage2").remove();
+      var item = document.getElementById("item");
+      var iImg = document.createElement("img");
       iImg.setAttribute('src', 'img/balloon.png');
       iImg.setAttribute('alt', 'floating red baloon with long red string attached to it');
       bgImg.style.backgroundImage = 'url("https://raw.githubusercontent.com/Headieh/construction/master/img/clouds.png")';
       bgImg.style.color = "black";
     }
     else {
+      var bgImg = document.getElementById("backgroundimage2");
+      document.getElementById("backgroundimage1").remove();
+      var item = document.getElementById("item");
+      var iImg = document.createElement("img");
       iImg.setAttribute('src', 'img/astronaut.png');
       iImg.setAttribute('alt', 'floating astronaut');
       bgImg.style.backgroundImage = 'url("https://raw.githubusercontent.com/Headieh/construction/master/img/star.png")'; //../img/star.png
