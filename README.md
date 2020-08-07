@@ -1,6 +1,11 @@
 # Construction
 
-This project shows use of transitions and was made just for fun
+This site was built to be a fun placeholder while my next project is being worked on.
+
+This project demonstrates:
+-   Animations
+-   Gulp
+-   jQuery
 
 ### To Migrate Code:
 -   Verify `node` is installed by running `node -v`
