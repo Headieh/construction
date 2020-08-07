@@ -1,15 +1,14 @@
+//-380px clouds
+//-680px stars
+
 @keyframes back1 {
 	from { background-position: 0 0; }
  	to { background-position: 0 -380px; }
-//-380px clouds
-//-680px stars
 	}
 
 @keyframes back2 {
 	from { background-position: 0 0; }
  	to { background-position: 0 -680px; }
-//-380px clouds
-//-680px stars
 	}
 
 $a-back1: back1 20s linear infinite;

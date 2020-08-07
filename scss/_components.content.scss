@@ -6,21 +6,19 @@
   padding: 0;
 }
 
-#backgroundimage1 {
+#backgroundimage {
   height: 100vh;
   width: 100%;
   margin:0;
-  background-color: navy;
   background-repeat: repeat;
-  animation: $a-back1;
 }
-#backgroundimage2 {
-  height: 100vh;
-  width: 100%;
-  margin:0;
-  background-color: black;
-  background-repeat: repeat;
+.day{
+  animation: $a-back1;
+  background-color: navy;
+}
+.night{
   animation: $a-back2;
+  background-color: black;
 }
 
 #item {
