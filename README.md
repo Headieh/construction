@@ -3,10 +3,12 @@
 This site was built to be a fun placeholder while my next project is being worked on.
 
 This project demonstrates:
--   Animations
--   Use of dynamic data from an API
--   Gulp
 -   jQuery
+-   Use of dynamic data from an API
+-   Custom styling, including web fonts
+-   Animations
+-   Gulp
+
 
 ### To Migrate Code:
 -   Verify `node` is installed by running `node -v`
