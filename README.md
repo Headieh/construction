@@ -4,6 +4,7 @@ This site was built to be a fun placeholder while my next project is being worke
 
 This project demonstrates:
 -   Animations
+-   Use of dynamic data from an API
 -   Gulp
 -   jQuery
 
